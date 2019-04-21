@@ -2,12 +2,13 @@
    
 <head>
       <title>Kuri Notify | Quicktask</title>
-      <link rel="icon" href="AVI.png">
+      <link rel="icon" href="KuriNotify.png">
       <link href="new.css" rel="stylesheet">
       <script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <meta charset="UTF-8">
       <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Droid+Sans:400,700|Cabin:400,500,600,700,400italic,500italic,600italic,700italic|Arimo:400,700,700italic|Quicksand:300,400,700|Lobster|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,900,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Oswald:400,700,300|Open+Sans+Condensed:300,300italic,700|Raleway:400,100,200,300,500,600,700,800,900|Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900|Oxygen:400,300,700|Play:400,700|Pathway+Gothic+One|Bangers' rel='stylesheet' type='text/css'>
       <link href="../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <script src="/path/to/js.cookie.js"></script>
       <style>
          #page {
          width: 900px;
@@ -36,6 +37,8 @@
          color: #fff !important;
          border-radius: 0px !important;
          background-color:#1997c6;
+         margin-left: 50px;
+         padding: 3% 0 3% 8%;
          }
          btn:hover {cursor: pointer;}
          hr{
@@ -100,7 +103,8 @@
          <div id="page">
          <div id="header" style="
             ">
-            <img src="AVI.png">
+            <br>
+            <img src="KuriNotify.png">
             <h1 style="
                font-size: 72;
                margin-left: 30px;
@@ -147,7 +151,7 @@
  </select>
 			   			   <btn type="btn" onclick="storeValues()" class="btn">SUBMIT</btn>
             </form>
-            <p id = "display" style="color:green; display: none;">SUBMITTED!</p>
+            <p id = "display" style="color:green; display: none; margin-left: 76px">SUBMITTED!</p>
          </div>
          <div id="right">
             <form id="main2">
@@ -178,7 +182,7 @@
                   <input type="text" name="zip" id="zip">
                </div>
 			   			                  <div class = "input">
-                  <p>Country</p>
+                  <p>COUNTRY</p>
                   <select id="country" onchange="checkProvince()">
 				  <option selected></option>
                      <option value="US">United States</option>
@@ -263,19 +267,19 @@
                      <option  value="Armed Forces Americas">Armed Forces Americas</option>
                      <option  value="Armed Forces Europe">Armed Forces Europe</option>
                      <option  value="Armed Forces Pacific">Armed Forces Pacific</option>
-					 <option  value="AB">Alberta</option>
-<option  value="BC">British Columbia</option>
-<option  value="MB">Manitoba</option>
-<option value="NB">New Brunswick</option>
-<option  value="NL">Newfoundland and Labrador</option>
-<option  value="NT">Northwest Territories</option>
-<option  value="NS">Nova Scotia</option>
-<option  value="NU">Nunavut</option>
-<option  value="ON">Ontario</option>
-<option value="PE">Prince Edward Island</option>
-<option value="QC">Quebec</option>
-<option value="SK">Saskatchewan</option>
-<option  value="YT">Yukon</option>
+			   <option  value="AB">Alberta</option>
+                        <option  value="BC">British Columbia</option>
+                        <option  value="MB">Manitoba</option>
+                        <option value="NB">New Brunswick</option>
+                        <option  value="NL">Newfoundland and Labrador</option>
+                        <option  value="NT">Northwest Territories</option>
+                        <option  value="NS">Nova Scotia</option>
+                        <option  value="NU">Nunavut</option>
+                        <option  value="ON">Ontario</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option  value="YT">Yukon</option>
                   </select>
                </div>
 
@@ -308,7 +312,7 @@
             return "";
             }
             if (document.referrer.indexOf('http://q.snkrsol.com/q') >= 0) { alert('You need to setup your quicktask or your bot does not support variant quicktask.'); }
-            if (document.referrer.indexOf('http://q.snkrsol.com/m') >= 0) { alert('You need to setup your quicktask first.'); }
+            #if (document.referrer.indexOf('http://q.snkrsol.com/m') >= 0) { alert('You need to setup your quicktask first.'); }
             var autofill = getCookie("autofill");
             
             var today = new Date();
@@ -317,7 +321,7 @@
             function setCookie(name, value)
             {
             
-            document.cookie= name + "=" + escape(value) + "; domain=snkrsol.com; path=/; expires=" + expiry.toGMTString();
+            document.cookie= name + "=" + escape(value) + "; domain=kurinotify.github.io/kurinotify; path=/; expires=" + expiry.toGMTString();
             
             }
             function storeValues()
@@ -327,7 +331,7 @@
                                            }
                                            else{
                                            setCookie("bot", document.getElementById('bot').value + "&" + document.getElementById('bot2').value);
-                                           alert("Rememebr to enable popups for http://www.snkrsol.com/ for this to work.");
+                                           alert("Rememebr to enable popups for https://kurinotify.github.io/kurinotify/ for this to work.");
                                            }
             setCookie("autofill", "?checkout[email]=" + document.getElementById('email').value + "&checkout[shipping_address][first_name]=" + document.getElementById('first').value  + "&checkout[shipping_address][last_name]=" + document.getElementById('last').value  + "&checkout[shipping_address][address1]=" + document.getElementById('address').value  + "&checkout[shipping_address][city]=" + document.getElementById('city').value  + "&checkout[shipping_address][zip]=" + document.getElementById('zip').value + "&checkout[shipping_address][phone]=" + document.getElementById('phone').value + "&checkout[shipping_address][country]=" + document.getElementById('country').value + "&checkout[shipping_address][province]=" + document.getElementById('province').value);
             document.getElementById("display").style.display = "block";
@@ -374,13 +378,9 @@ checkProvince();
 			
 			
 			
-			}
-				
-			
-			
+                  }                       
+							
 			
 			
          </script>
-
-<!-- Mirrored from quicktasks.snkrsol.com/manager by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2019 03:54:37 GMT -->
 </html>
