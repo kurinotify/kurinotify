@@ -1,0 +1,387 @@
+<html>
+   
+<!-- Mirrored from quicktasks.snkrsol.com/manager by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2019 03:54:36 GMT -->
+<head>
+      <title>Kuri Notify | Quicktask</title>
+      <link rel="icon" href="AVI.png">
+      <link href="new.css" rel="stylesheet">
+      <script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <meta charset="UTF-8">
+      <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Droid+Sans:400,700|Cabin:400,500,600,700,400italic,500italic,600italic,700italic|Arimo:400,700,700italic|Quicksand:300,400,700|Lobster|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,900,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Oswald:400,700,300|Open+Sans+Condensed:300,300italic,700|Raleway:400,100,200,300,500,600,700,800,900|Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900|Oxygen:400,300,700|Play:400,700|Pathway+Gothic+One|Bangers' rel='stylesheet' type='text/css'>
+      <link href="../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <style>
+         #page {
+         width: 900px;
+         margin: auto;
+         margin-top: 100px;
+         background-color: #080808;
+         border: 1px solid #1997c6;
+         border-radius: 7px;
+         padding: 30px;
+         }
+         h1{
+         display: inline-block;
+         font-size: 20px;
+         margin-bottom: -12px;
+         margin-top: 10px;
+         }
+         * {
+         font-family: 'Roboto', sans-serif;
+         color: #f8f9fa;
+         }
+         #select1, #select1 option, input{
+         color: black !important;}
+         body{
+         background-color:black;}
+         .btn{
+         color: #fff !important;
+         border-radius: 0px !important;
+         background-color:#1997c6;
+         }
+         btn:hover {cursor: pointer;}
+         hr{
+         border-top: 1px solid rgba(255, 255, 255, 0.1);
+         }
+         #select1, input {
+         color: black !important;
+         margin-bottom: 15px;
+         }
+         #left{
+         width: 300px;
+         display: inline-block;
+         vertical-align: top;}
+         table{
+         display:inline-block;
+         margin-left:40px;
+         }
+         td {
+         padding: 2px;
+         padding-left: 20px;
+         }
+         #right{
+         width: 400px;
+         display: inline-block;
+         vertical-align: top; }
+         #header{
+         width:100%;
+         height:150px;
+         }
+         td{border: 1px solid;}
+         #keywordadded{
+         color: green;
+         display:none;
+         }
+         select, option {
+         color: black;
+         margin-bottom: 20px;
+         }
+         img {
+         height: 139px;
+         margin-right: 10px;
+         margin-top: -30px;
+         }
+         #right, #left{
+         width: 410px;
+         display: inline-block;
+         vertical-align: top;}
+         .input{
+         display:inline-block;}
+         .btn {
+         color: #fff !important;
+         display: block;
+         margin-top: 20px;
+         border-radius: 0px !important;
+         background-color: #003366;
+         width: 120px;
+         height: 30px;
+         font-size: 22;
+         }
+      </style>
+      <head>
+         <div id="page">
+         <div id="header" style="
+            ">
+            <img src="AVI.png">
+            <h1 style="
+               font-size: 72;
+               margin-left: 30px;
+               ">QUICKTASKS</h1>
+         </div>
+         <hr>
+         <div id="left">
+            <form id="main1">
+               <p>Preferred Bot: </p>
+               <select name="bot" id="bot">
+			   <option selected></option>
+                  <option value="cyber">CYBER</option>
+                  <option value="whisk">WHISK</option>
+                  <option value="pd">PROJECT DESTROYER</option>
+                  <option value="kick">KICKMOJI</option>
+                  <option value="auto">AUTOFILL</option>
+                  <option value="wop">WOP</option>
+                  <option value="sole">SOLEAIO</option>
+                  <option value="eve">EVE</option>
+                  <option value="tks">TKS</option>
+                  <option value="gaws">GAWS</option>
+                  <option value="proton">PROTONAIO</option>
+                  <option value="what">WHATBOT (PRODUCT QUICKTASK ONLY)</option>
+                  <option value="dashe">DASHE</option>
+				  <option value="anb">ANB (PRODUCT QUICKTASK ONLY)</option>
+<option value="balko">BALKOBOT</option>       
+        </select>
+               <select id="bot2" name="bot2" id="bot2">
+                  <option selected></option>
+                  <option value="cyber">CYBER</option>
+                  <option value="pd">PROJECT DESTROYER</option>
+                  <option value="kick">KICKMOJI</option>
+                  <option value="auto">AUTOFILL</option>
+                  <option value="wop">WOP</option>
+                  <option value="sole">SOLEAIO</option>
+                  <option value="eve">EVE</option>
+                  <option value="tks">TKS</option>
+                  <option value="gaws">GAWS</option>
+                  <option value="proton">PROTONAIO</option>
+                  <option value="what">WHATBOT (PRODUCT QUICKTASK ONLY)</option>
+                  <option value="dashe">DASHE</option>
+				   <option value="anb">ANB (PRODUCT QUICKTASK ONLY)</option>
+<option value="balko">BALKOBOT</option>              
+ </select>
+			   			   <btn type="btn" onclick="storeValues()" class="btn">SUBMIT</btn>
+            </form>
+            <p id = "display" style="color:green; display: none;">SUBMITTED!</p>
+         </div>
+         <div id="right">
+            <form id="main2">
+               <h2>
+               KURI NOTIFY AUTOFILL</h1>
+               <div class = "input">
+                  <p>EMAIL</p>
+                  <input type="text" name="email" id="email">
+               </div>
+               <div class = "input">
+                  <p>FIRST NAME</p>
+                  <input type="text" name="first" id="first">
+               </div>
+               <div class = "input">
+                  <p>LAST NAME</p>
+                  <input type="text" name="last" id="last">
+               </div>
+               <div class = "input">
+                  <p>ADDRESS</p>
+                  <input type="text" name="address" id="address">
+               </div>
+               <div class = "input">
+                  <p>CITY</p>
+                  <input type="text" name="city" id="city">
+               </div>
+               <div class = "input">
+                  <p>ZIP</p>
+                  <input type="text" name="zip" id="zip">
+               </div>
+			   			                  <div class = "input">
+                  <p>Country</p>
+                  <select id="country" onchange="checkProvince()">
+				  <option selected></option>
+                     <option value="US">United States</option>
+                     <option  value="GB">United Kingdom</option>
+					     <option  value="CA">Canada</option>
+						  <option  value="FR">France</option>
+						   <option  value="CH">Switzerland</option>
+						    <option  value="IT">Italy</option>
+						    <option  value="DE">Germany</option>
+							 <option  value="AT">Austria</option>
+							  <option  value="CZ">Czech</option>
+					<option  value="JP">JAPAN</option>
+					<option  value="CN">CHINA</option>
+					<option  value="IE">IRELAND</option>
+					<option  value="PT">PORTUGAL</option>
+					<option  value="SE">SWEDEN</option>
+                  </select>
+               </div>
+               <div class = "input" id="provinceInput">
+                  <p>STATE</p>
+                  <select name="province" id="province">
+				  <option selected></option>
+                     <option value="Alabama">Alabama</option>
+                     <option  value="Alaska">Alaska</option>
+                     <option  value="American Samoa">American Samoa</option>
+                     <option  value="Arizona">Arizona</option>
+                     <option  value="Arkansas">Arkansas</option>
+                     <option  value="California">California</option>
+                     <option  value="Colorado">Colorado</option>
+                     <option  value="Connecticut">Connecticut</option>
+                     <option  value="Delaware">Delaware</option>
+                     <option  value="District of Columbia">District of Columbia</option>
+                     <option  value="Federated States of Micronesia">Federated States of Micronesia</option>
+                     <option  value="Florida">Florida</option>
+                     <option  value="Georgia">Georgia</option>
+                     <option  value="Guam">Guam</option>
+                     <option value="Hawaii">Hawaii</option>
+                     <option  value="Idaho">Idaho</option>
+                     <option  value="Illinois">Illinois</option>
+                     <option  value="Indiana">Indiana</option>
+                     <option  value="Iowa">Iowa</option>
+                     <option  value="Kansas">Kansas</option>
+                     <option  value="Kentucky">Kentucky</option>
+                     <option  value="Louisiana">Louisiana</option>
+                     <option  value="Maine">Maine</option>
+                     <option  value="Marshall Islands">Marshall Islands</option>
+                     <option  value="Maryland">Maryland</option>
+                     <option  value="Massachusetts">Massachusetts</option>
+                     <option  value="Michigan">Michigan</option>
+                     <option  value="Minnesota">Minnesota</option>
+                     <option  value="Mississippi">Mississippi</option>
+                     <option value="Missouri">Missouri</option>
+                     <option  value="Montana">Montana</option>
+                     <option  value="Nebraska">Nebraska</option>
+                     <option  value="Nevada">Nevada</option>
+                     <option  value="New Hampshire">New Hampshire</option>
+                     <option  value="New Jersey">New Jersey</option>
+                     <option  value="New Mexico">New Mexico</option>
+                     <option  value="New York">New York</option>
+                     <option  value="North Carolina">North Carolina</option>
+                     <option  value="North Dakota">North Dakota</option>
+                     <option  value="Northern Mariana Islands">Northern Mariana Islands</option>
+                     <option  value="Ohio">Ohio</option>
+                     <option  value="Oklahoma">Oklahoma</option>
+                     <option  value="Oregon">Oregon</option>
+                     <option  value="Palau">Palau</option>
+                     <option  value="Pennsylvania">Pennsylvania</option>
+                     <option  value="Puerto Rico">Puerto Rico</option>
+                     <option  value="Rhode Island">Rhode Island</option>
+                     <option  value="South Carolina">South Carolina</option>
+                     <option  value="South Dakota">South Dakota</option>
+                     <option  value="Tennessee">Tennessee</option>
+                     <option  value="Texas">Texas</option>
+                     <option  value="Utah">Utah</option>
+                     <option  value="Vermont">Vermont</option>
+                     <option  value="Virgin Islands">Virgin Islands</option>
+                     <option  value="Virginia">Virginia</option>
+                     <option value="Washington">Washington</option>
+                     <option value="West Virginia">West Virginia</option>
+                     <option  value="Wisconsin">Wisconsin</option>
+                     <option  value="Wyoming">Wyoming</option>
+                     <option  value="Armed Forces Americas">Armed Forces Americas</option>
+                     <option  value="Armed Forces Europe">Armed Forces Europe</option>
+                     <option  value="Armed Forces Pacific">Armed Forces Pacific</option>
+					 <option  value="AB">Alberta</option>
+<option  value="BC">British Columbia</option>
+<option  value="MB">Manitoba</option>
+<option value="NB">New Brunswick</option>
+<option  value="NL">Newfoundland and Labrador</option>
+<option  value="NT">Northwest Territories</option>
+<option  value="NS">Nova Scotia</option>
+<option  value="NU">Nunavut</option>
+<option  value="ON">Ontario</option>
+<option value="PE">Prince Edward Island</option>
+<option value="QC">Quebec</option>
+<option value="SK">Saskatchewan</option>
+<option  value="YT">Yukon</option>
+                  </select>
+               </div>
+
+               <div class = "input">
+                  <p>PHONE</p>
+                  <input type="text" name="phone" id="phone">
+               </div>
+               <br>
+
+            </form>
+            <hr>
+         </div>
+         <div id="footer">
+            <p style="text-align:left;">All rights reserved 2019 © Kuri Notify</p>
+         </div>
+         <script type="text/javascript">
+            function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+            }
+            }
+            return "";
+            }
+            if (document.referrer.indexOf('http://q.snkrsol.com/q') >= 0) { alert('You need to setup your quicktask or your bot does not support variant quicktask.'); }
+            if (document.referrer.indexOf('http://q.snkrsol.com/m') >= 0) { alert('You need to setup your quicktask first.'); }
+            var autofill = getCookie("autofill");
+            
+            var today = new Date();
+            var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 100000);
+            
+            function setCookie(name, value)
+            {
+            
+            document.cookie= name + "=" + escape(value) + "; domain=snkrsol.com; path=/; expires=" + expiry.toGMTString();
+            
+            }
+            function storeValues()
+            {
+                      if (document.getElementById('bot2').value == ""){
+                   setCookie("bot", document.getElementById('bot').value);
+                                           }
+                                           else{
+                                           setCookie("bot", document.getElementById('bot').value + "&" + document.getElementById('bot2').value);
+                                           alert("Rememebr to enable popups for http://www.snkrsol.com/ for this to work.");
+                                           }
+            setCookie("autofill", "?checkout[email]=" + document.getElementById('email').value + "&checkout[shipping_address][first_name]=" + document.getElementById('first').value  + "&checkout[shipping_address][last_name]=" + document.getElementById('last').value  + "&checkout[shipping_address][address1]=" + document.getElementById('address').value  + "&checkout[shipping_address][city]=" + document.getElementById('city').value  + "&checkout[shipping_address][zip]=" + document.getElementById('zip').value + "&checkout[shipping_address][phone]=" + document.getElementById('phone').value + "&checkout[shipping_address][country]=" + document.getElementById('country').value + "&checkout[shipping_address][province]=" + document.getElementById('province').value);
+            document.getElementById("display").style.display = "block";
+            return true;
+            }
+			
+			function checkProvince(){
+			if ((document.getElementById('country').value === "CA" || document.getElementById('country').value === "US")){
+			document.getElementById('provinceInput').style.display = "inline-block";
+			}
+			else{
+				document.getElementById('provinceInput').style.display = "none";
+			}
+			}
+			
+			var botCookie = getCookie("bot");
+			if (typeof botCookie !== 'undefined'){
+			if (!botCookie.includes("&")){
+			document.querySelector('#bot').value = botCookie;
+			}
+			else{
+			document.querySelector('#bot').value = botCookie.split("&")[0];
+			document.querySelector('#bot2').value =  botCookie.split("&")[1];
+			}
+			
+			}
+			var autofillCookie = getCookie("autofill");
+			if (typeof autofillCookie !== 'undefined' ){
+			autofillCookie = autofillCookie.substring(1);
+			autofillCookie = autofillCookie.split("&");
+			if (autofillCookie.length == 9){
+			document.getElementById('email').value = autofillCookie[0].replace("checkout[email]=", "");
+			document.getElementById('first').value = autofillCookie[1].replace("checkout[shipping_address][first_name]=", "");
+			document.getElementById('last').value = autofillCookie[2].replace("checkout[shipping_address][last_name]=", "");
+			document.getElementById('address').value = autofillCookie[3].replace("checkout[shipping_address][address1]=", "");
+		document.getElementById('city').value = autofillCookie[4].replace("checkout[shipping_address][city]=", "");
+			document.getElementById('zip').value = autofillCookie[5].replace("checkout[shipping_address][zip]=", "");
+						document.getElementById('phone').value = autofillCookie[6].replace("checkout[shipping_address][phone]=", "");
+			document.getElementById('country').value = autofillCookie[7].replace("checkout[shipping_address][country]=", "");
+			document.getElementById('province').value = autofillCookie[8].replace("checkout[shipping_address][province]=", "");
+checkProvince();
+			}
+		
+			
+			
+			
+			}
+				
+			
+			
+			
+			
+         </script>
+
+<!-- Mirrored from quicktasks.snkrsol.com/manager by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Apr 2019 03:54:37 GMT -->
+</html>
